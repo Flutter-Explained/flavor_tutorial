@@ -8,5 +8,7 @@ class FlavorConfig {
   String imageLocation;
   ThemeData theme;
 
-  FlavorConfig();
+  FlavorConfig({appTitle = "Flavor Tutorial", imageLocation = ""}) {
+    this.theme = ThemeData.light();
+  }
 }

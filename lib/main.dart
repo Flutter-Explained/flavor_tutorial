@@ -2,15 +2,8 @@ import 'package:flavour_example/flavor_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-var flavorConfigProvider;
-
-void mainCommon(FlavorConfig config) {
-  flavorConfigProvider = StateProvider((ref) => config);
-  runApp(
-    ProviderScope(
-      child: MyApp(),
-    ),
-  );
+void main() {
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -46,3 +39,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+var flavorConfigProvider = StateProvider((ref) => FlavorConfig());
