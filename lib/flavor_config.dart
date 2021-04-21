@@ -8,7 +8,10 @@ class FlavorConfig {
   String imageLocation;
   ThemeData theme;
 
-  FlavorConfig({appTitle = "Flavor Tutorial", imageLocation = ""}) {
+  FlavorConfig({
+    this.appTitle = "Flavor Tutorial",
+    this.imageLocation = "assets/images/video.jpg",
+  }) {
     this.theme = ThemeData.light();
   }
 }
