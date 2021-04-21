@@ -6,7 +6,6 @@ var flavorConfigProvider;
 
 void mainCommon(FlavorConfig config) {
   flavorConfigProvider = StateProvider((ref) => config);
-
   runApp(
     ProviderScope(
       child: MyApp(),
@@ -22,6 +21,7 @@ class MyApp extends StatelessWidget {
       title: context.read(flavorConfigProvider).state.appTitle,
       theme: context.read(flavorConfigProvider).state.theme,
       home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
