@@ -6,6 +6,7 @@
 In this repository we collect everything that is related to Flavors.
 
 [Flutter Flavors - Live Stream](https://www.youtube.com/watch?v=nW2F4ao7gEM)
+[Flavors in Flutter - Multiple apps from one source code - Icon Generation](https://www.youtube.com/watch?v=4Y7WaeU3P60)
 
 ## Getting Started
 This project is build with Flavors in order to start the different flavors.
